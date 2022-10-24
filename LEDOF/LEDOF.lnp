@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"ledof\startup_stm32f103xb.o"
+"ledof\main.o"
+"ledof\gpio.o"
+"ledof\stm32f1xx_it.o"
+"ledof\stm32f1xx_hal_msp.o"
+"ledof\stm32f1xx_hal_gpio_ex.o"
+"ledof\stm32f1xx_hal_tim.o"
+"ledof\stm32f1xx_hal_tim_ex.o"
+"ledof\stm32f1xx_hal.o"
+"ledof\stm32f1xx_hal_rcc.o"
+"ledof\stm32f1xx_hal_rcc_ex.o"
+"ledof\stm32f1xx_hal_gpio.o"
+"ledof\stm32f1xx_hal_dma.o"
+"ledof\stm32f1xx_hal_cortex.o"
+"ledof\stm32f1xx_hal_pwr.o"
+"ledof\stm32f1xx_hal_flash.o"
+"ledof\stm32f1xx_hal_flash_ex.o"
+"ledof\stm32f1xx_hal_exti.o"
+"ledof\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "LEDOF\LEDOF.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LEDOF.map" -o LEDOF\LEDOF.axf
